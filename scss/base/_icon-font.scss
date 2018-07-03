@@ -1,0 +1,21 @@
+@include font-face("Icons", "../fonts/Icons");
+
+%icon-font {
+    font-family: "Icons";
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-transform: none;
+}
+
+
+%icon-volume-empty         { content: "\e800"; }
+%icon-volume-tiny          { content: "\e801"; }
+%icon-volume-min           { content: "\e802"; }
+%icon-volume-large         { content: "\e803"; }
+%icon-play                 { content: "\e804"; }
+%icon-pause                { content: "\e805"; }
+%icon-prev                 { content: "\e806"; }
+%icon-next                 { content: "\e807"; }
+%icon-list                 { content: "\e808"; }

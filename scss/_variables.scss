@@ -1,0 +1,21 @@
+//  - Base font sizes
+// =================================================
+
+$em-base: 16px;
+$lh-base: 1.2;
+$progress-height: .25em;
+$li-padding: .75em;
+$progress-handle: $progress-height * 4;
+$li-height: $li-padding * 2 + $lh-base;
+
+
+//  - Colors
+// =================================================
+
+$white:         #fff;
+$black:         #2b2b2b;
+$black-darken:    darken($black, 10%);
+$black-light:     lighten($black, 10%);
+$gray:          #D8D8D8;
+$green:         #00B2B2;
+$green-thin:    #E6F4F5;

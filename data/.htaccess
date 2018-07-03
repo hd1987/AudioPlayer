@@ -1,0 +1,19 @@
+# MP3 audio
+#AddType audio/mpeg3 .mp3
+#AddType audio/mp3 .mp3
+#AddType audio/x-mpeg3 .mp3
+
+# Ogg Vorbis audio
+#AddType application/ogg .ogg
+AddType audio/ogg .ogg
+#AddType audio/ogg .oga
+
+# Server can play video
+# Ogg Theora video
+#AddType video/ogg .ogv
+
+# MP4 video
+#AddType video/mp4 .mp4
+
+# Webm video
+#AddType video/webm .webm

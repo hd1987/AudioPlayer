@@ -1,0 +1,242 @@
+.audio-player {
+  margin: 50px auto 0;
+  min-width: 320px;
+  max-width: 700px;
+  padding: 30px;
+
+  .section {
+    position: relative;
+    @include clearfix;
+  }
+
+  .player {
+    background: $black;
+    border-radius: 4px;
+  }
+
+  // title
+  .title {
+    padding: 1em 4em;
+    font-size: 1rem;
+    color: $white;
+    text-align: center;
+    border-bottom: solid 1px $black-light;
+  }
+
+  // btn list
+  .btn-list  {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    right: 1em;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      color: $black-light;
+      transition: all .2s ease-in;
+    }
+
+    &.active {
+      color: $white;
+    }
+  }
+
+  // controls
+
+  .controls {
+    padding: 1em 3em;
+    text-align: center;
+
+    & > * {
+      display: inline-block;
+      font-size: 1.25rem;
+      line-height: 1em;
+      margin: 0 .5em;
+      padding: .2em .5em;
+      min-width: 1rem;
+      color: $white;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background: $black-darken;
+        transition: all .2s ease-in;
+      }
+    }
+  }
+
+  // time
+  .time {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    color: $white;
+    font-size: .75rem;
+    line-height: 1rem;
+
+    &.passed {
+      left: 1.5rem;
+    }
+
+    &.remain {
+      right: 3.5rem;
+    }
+  }
+
+  // progress
+  .progress {
+    font-size: 1rem;
+    margin: 0px 6.25em 30px 4em;
+    padding: .375em 0;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: $progress-height;
+      background: $gray;
+    }
+
+    .ui-slider-range {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: $progress-height;
+      background: $green;
+    }
+    .ui-slider-handle {
+        position: absolute;
+        z-index: 9;
+        width: $progress-handle;
+        height: $progress-handle;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: $green-thin;
+        cursor: pointer;
+        outline: none;
+    }
+  }
+
+  // volume
+  .btn-volume {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 1.5em;
+    width: 1em;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .volume-section {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    padding: .875em 0;
+    background: $black;
+    box-shadow: 0 0 10px $black-darken;
+  }
+
+  .volume {
+    position: relative;
+    padding: 0 .625em;
+    height: 7.5rem;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      width: $progress-height;
+      height: 100%;
+      background: $gray;
+    }
+
+    .ui-slider-range {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: $progress-height;
+      background: $green;
+    }
+    .ui-slider-handle {
+        position: absolute;
+        z-index: 9;
+        width: $progress-handle;
+        height: $progress-handle;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border-radius: 50%;
+        background: $green-thin;
+        cursor: pointer;
+        outline: none;
+    }
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .playlist {
+    margin-top: -4px;
+    background: $black;
+    border-top: solid 1px $black-light;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    max-height: $li-height * 6;
+    overflow-y: scroll;
+
+    li {
+      font-size: 1rem;
+      padding: $li-padding 2em;
+      color: $white;
+      list-style: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      & + li {
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: 9;
+          top: 0;
+          right: 2em;
+          left: 2em;
+          border-top: solid 1px $black-light;
+        }
+      }
+
+      &:hover {
+        background: $black-light;
+
+        & + li {
+          &::after {
+            right: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .active {
+      &::before {
+        font-size: .75em;
+        margin-right: .75em;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>HTML5 Audio player with playlist</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="audio-player">
+
+    <div class="player">
+
+      <div class="section">
+        <div class="title"></div>
+        <div class="btn-list icon-list"></div>
+      </div>
+
+      <div class="section controls">
+        <div class="prev icon-prev"></div>
+        <div class="play icon-play"></div>
+        <div class="pause icon-pause hidden"></div>
+        <div class="next icon-next"></div>
+      </div>
+      
+      <div class="section">
+        <div class="time passed"></div>
+        <div class="progress"></div>
+        <div class="time remain"></div>
+        <div class="btn-volume icon-volume-min">
+          <div class="volume-section">
+            <div class="volume hidden"></div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="playlist hidden">
+      <li audiourl="data/le-dernier-jour-de-lautomne.mp3">le-dernier-jour-de-lautomne.mp3</li>
+      <li audiourl="data/my-summer-love.mp3">my-summer-love.mp3</li>
+      <li audiourl="data/sadie.mp3">sadie.mp3</li>
+    </div>
+
+  </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.12.1.custom.min.js"></script>
+<script type="text/javascript" src="js/audio-player.js"></script>
+
+</html>

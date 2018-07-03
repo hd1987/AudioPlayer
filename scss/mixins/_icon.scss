@@ -1,0 +1,4 @@
+@mixin icon($icon) {
+    @extend %icon-#{$icon};
+    @extend %icon-font;
+}

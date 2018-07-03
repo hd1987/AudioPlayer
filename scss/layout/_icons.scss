@@ -1,0 +1,38 @@
+.icon-volume-empty::before {
+  @include icon(volume-empty);
+}
+
+.icon-volume-tiny::before {
+  @include icon(volume-tiny);
+}
+
+.icon-volume-min::before {
+  @include icon(volume-min);
+}
+
+.icon-volume-large::before {
+  @include icon(volume-large);
+}
+
+.icon-play,
+.active {
+  &::before {
+    @include icon(play);
+  }
+}
+
+.icon-pause::before {
+  @include icon(pause);
+}
+
+.icon-prev::before {
+  @include icon(prev);
+}
+
+.icon-next::before {
+  @include icon(next);
+}
+
+.icon-list::before {
+  @include icon(list);
+}
