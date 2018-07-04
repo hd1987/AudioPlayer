@@ -1,4 +1,4 @@
-# AudioPlayer custom audio player with playlist
+# Custom AudioPlayer layout with playlist
 
 ![audio screenshot](http://adihuang.com/AudioPlayer/screenshot.png)
 
