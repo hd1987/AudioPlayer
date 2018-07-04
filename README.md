@@ -8,7 +8,7 @@ http://adihuang.com/AudioPlayer
 
 ## Browser support
 
-Chrome Firefox Safri IE11+ and most browser on mobile
+Chrome, Firefox, Safri, IE11+, most browser on mobile
 
 ## Plugin
 
@@ -22,5 +22,5 @@ Chrome Firefox Safri IE11+ and most browser on mobile
 [The MIT License](http://opensource.org/licenses/MIT)  
 Be free to enjoy and participate in open source
 
-## 贡献
+## contribution
 If you have good opinions or Suggestions, please give us an issue or pull request
