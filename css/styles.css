@@ -6,6 +6,7 @@
 
 html,
 body {
+  font-family: arial, "Microsoft YaHei", "PingFang SC", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased; }
