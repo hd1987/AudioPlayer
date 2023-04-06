@@ -1,10 +1,10 @@
 # Custom AudioPlayer layout with playlist
 
-![audio screenshot](http://adihuang.com/AudioPlayer/screenshot.png)
+![audio screenshot](https://raw.githubusercontent.com/hd1987/AudioPlayer/main/screenshot.png)
 
 ## The online preview
 
-http://adihuang.com/AudioPlayer
+https://audioplayer.adihuang.com
 
 ## Browser support
 
